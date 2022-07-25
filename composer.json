@@ -1,0 +1,40 @@
+{
+    "name": "nathanhennig/oauth2-allyable",
+    "description": "Allyable OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Hennig",
+            "email": "nathan.hennig@gmail.com",
+            "homepage": "https://github.com/nathanhennig"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authorisation",
+        "allyable"
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0 || ^8.0",
+        "league/oauth2-client": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3",
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "phpunit/phpunit": "^5.7 || ^6.0 || ^9.3",
+        "squizlabs/php_codesniffer": "^2.3 || ^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nathanhennig\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nathanhennig\\OAuth2\\Client\\Test\\": "tests/src/"
+        }
+    }
+}
