@@ -24,7 +24,7 @@ class Allyable extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return 'https:/qa.allyable.com/connect/authorize';
+        return 'https://qa.allyable.com/connect/authorize';
     }
 
     /**
