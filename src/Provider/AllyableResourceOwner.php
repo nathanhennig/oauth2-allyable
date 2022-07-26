@@ -32,7 +32,37 @@ class AllyableResourceOwner implements ResourceOwnerInterface
      */
     public function getId()
     {
-        return $this->getValueByKey($this->response, 'account_id');
+        return $this->getValueByKey($this->response, 'sub');
+    }
+
+    /**
+     * Get resource owner email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->getValueByKey($this->response, 'name');
+    }
+
+    /**
+     * Get resource owner family name
+     *
+     * @return string
+     */
+    public function getFamilyName()
+    {
+        return $this->getValueByKey($this->response, 'family_name');
+    }
+
+    /**
+     * Get resource owner given name
+     *
+     * @return string
+     */
+    public function getGivenName()
+    {
+        return $this->getValueByKey($this->response, 'given_name');
     }
 
     /**
@@ -42,7 +72,17 @@ class AllyableResourceOwner implements ResourceOwnerInterface
      */
     public function getName()
     {
-        return $this->getValueByKey($this->response, 'name.display_name');
+        return $this->getValueByKey($this->response, 'name');
+    }
+
+    /**
+     * Get resource owner preferred username
+     *
+     * @return string
+     */
+    public function getPreferredUserName()
+    {
+        return $this->getValueByKey($this->response, 'preferred_username');
     }
 
     /**
