@@ -70,6 +70,17 @@ class Allyable extends AbstractProvider
     }
 
     /**
+     * Returns the string that should be used to separate scopes when building
+     * the URL for requesting an access token.
+     *
+     * @return string Scope separator, defaults to ','
+     */
+    protected function getScopeSeparator()
+    {
+        return ' ';
+    }
+
+    /**
      * Get the default scopes used by this provider.
      *
      * This should not be a complete list of all scopes, but the minimum
@@ -137,8 +148,13 @@ class Allyable extends AbstractProvider
      */
     public function getAuthorizationUrl(array $options = [])
     {
-        return parent::getAuthorizationUrl(array_merge([
-            'approval_prompt' => []
-        ], $options));
+        return parent::getAuthorizationUrl(
+            array_merge(
+                [
+                    'approval_prompt' => []
+                ],
+                $options
+            )
+        );
     }
 }
