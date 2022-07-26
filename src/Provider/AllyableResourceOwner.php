@@ -42,7 +42,7 @@ class AllyableResourceOwner implements ResourceOwnerInterface
      */
     public function getEmail()
     {
-        return $this->getValueByKey($this->response, 'name');
+        return $this->getValueByKey($this->response, 'email');
     }
 
     /**
