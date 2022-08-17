@@ -24,7 +24,7 @@ class Allyable extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return 'https://allyable.com/connect/authorize';
+        return 'https://portal.allyable.com/connect/authorize';
     }
 
     /**
@@ -34,7 +34,7 @@ class Allyable extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://allyable.com/connect/token';
+        return 'https://portal.allyable.com/connect/token';
     }
 
     /**
@@ -44,7 +44,7 @@ class Allyable extends AbstractProvider
      */
     public function getBaseEndSessionUrl(array $params)
     {
-        return 'https://allyable.com/connect/endsession';
+        return 'https://portal.allyable.com/connect/endsession';
     }
 
     /**
@@ -66,7 +66,7 @@ class Allyable extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://allyable.com/connect/userinfo';
+        return 'https://portal.allyable.com/connect/userinfo';
     }
 
     /**
