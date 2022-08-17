@@ -8,7 +8,7 @@ use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 
-class Allyable extends AbstractProvider
+class AllyableDev extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
